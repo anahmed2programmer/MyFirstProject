@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/***** HEADER *****/
+header {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+}
+
+header #siteName {
+  text-decoration: none;
+  color: #000;
+  padding: 3px;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+header #siteName span {
+  font-weight: bold;
+  color: red;
+  letter-spacing: 0px;
+}
+
+header #menu li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 3px;
+  font-size: 13px;
+}
+
+header #menu li a {
+  padding: 2px;
+  text-decoration: none;
+  color: #000;
+}
+
+/***** HEADER (END)*****/
+
+/***** MAINPOSTER *****/
+#mainPoster{
+  height: 170px;
+  background-image: url(images/img.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+#mainPoster .box{
+  height: 100%;
+  background-image: linear-gradient(rgba(55, 25, 0, .2), rgba(104, 114, 226, .5));
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#mainPoster .box .boxChild{
+  padding: 7px;
+  border: 4px solid #fff;
+  background-color: rgba(0, 0, 0, .2);
+}
+#mainPoster .box h1{
+  margin-bottom: -9px;
+  font-size: 32px;
+  text-align: center;
+  background: red;
+  color: #000;
+  padding: 5px;
+}
+#mainPoster .box p{
+  letter-spacing: 4px;
+  text-align: center;
+  font-size: 10px;
+  background: #000;
+  color: red;
+  padding-left: 3px;
+}
+/***** MAINPOSTER (END)*****/
+
+/***** PROJECTS *****/
+#projects .houses {
+  position: relative;
+  margin: 25px 0;
+}
+
+.houseNumber {
+  color: #fff;
+  background-color: #000;
+  padding: 3px 5px;
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+}
+
+/***** PROJECTS (END)*****/
+
+/***** ABOUT *****/
+#about>p {
+  margin: 10px 0 25px 0;
+}
+
+#about #abChild .peoples {
+  margin: 50px 0;
+}
+
+#about #abChild .peoples .pName,
+#about #abChild .peoples .expert {
+  margin: 15px 0;
+}
+
+#about #abChild .peoples .expert {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#about #abChild .peoples p {
+  margin: 10px 0;
+  font-size: 1em;
+}
+
+#about #abChild .peoples button {
+  display: block;
+  padding: 6px 0;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+}
+
+/***** ABOUT (END)*****/
+
+/***** CONTACT *****/
+
+
+#contact form input {
+  margin: 10px 0;
+  padding: 8px 5px;
+  font-size: 16px;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+#contact form input:last-child {
+  width: 40%;
+  background: orange;
+  color: #fff;
+  display: inline-block;
+}
+
+#contact img {
+  margin-top: 30px;
+}
+
+/***** CONTACT (END)*****/
+
+footer {
+  height: 100px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+
+
+/***** IMPORTANTS *****/
+img {
+  width: 100%;
+}
+
+.marginLR {
+  margin: 60px 30px;
+}
+
+hr {
+  margin: 10px 0;
+  opacity: .3;
+}
+
+footer {
+  text-align: center;
+}
+
+/***** IMPORTANTS (END)*****/
+@media screen and (min-width:600px) {
+  #header{
+    padding: 20px 10;
+  }
+  header #siteName {
+    margin-left: 10px;
+    font-size: 1.5rem;
+  }
+
+  header #menu li {
+    font-size: 15px;
+    margin-right: 5px;
+  }
+
+  #mainPoster{
+    height: 300px;
+  }
+  #mainPoster .box .boxChild h1{
+    font-size: 50px;
+  }
+  #mainPoster .box .boxChild p{
+    font-size: 20px;
+  }
+
+  #projects #projectsChild,
+  #about #abChild {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #projects #projectsChild .houses {
+    width: 45%;
+    margin: 10px;
+    box-shadow: 0 0 5px 1px #bbb;
+    padding: 10px;
+  }
+
+  #about #abChild .peoples {
+    margin: 20px 10px;
+  }
+
+  #about #abChild .peoples {
+    width: 45%;
+  }
+
+  #contact form {
+    display: block;
+    width: 80%;
+    margin:0 auto;
+  }
+
+  #contact form input {
+    width: 70%;
+  }
+
+  footer {
+    font-size: 1.2rem;
+  }
+  .marginLR {
+    margin: 60px 40px;
+  }
+}
